@@ -37,6 +37,11 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: linear-gradient(135deg, rgba(26, 58, 92, 0.85) 0%, rgba(44, 82, 130, 0.75) 100%), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&q=80');"></div>
+            <div class="slide" style="background-image: linear-gradient(135deg, rgba(26, 58, 92, 0.85) 0%, rgba(44, 82, 130, 0.75) 100%), url('https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=1920&q=80');"></div>
+            <div class="slide" style="background-image: linear-gradient(135deg, rgba(26, 58, 92, 0.85) 0%, rgba(44, 82, 130, 0.75) 100%), url('https://images.unsplash.com/photo-1588072432836-e10032774350?w=1920&q=80');"></div>
+        </div>
         <div class="hero-overlay"></div>
         <div class="container hero-content">
             <h1 class="hero-title">
@@ -45,13 +50,17 @@
             </h1>
             <p class="tagline">"English Medium Education With Indian Culture"</p>
             <p class="hero-description">
-                Providing quality education from Play Group to Class 12 with a perfect blend of modern learning and traditional values.
+                Welcome to R.K.M.S.D. Education Centre - Providing quality education from Play Group to Class 12 with a perfect blend of modern learning and traditional Indian values in a disciplined environment.
             </p>
             <div class="hero-buttons">
-                <a href="#admissions" class="btn btn-primary">Admission Enquiry</a>
-                <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                <a href="#admissions" class="btn btn-primary">📝 Admission Enquiry</a>
+                <a href="tel:8953089301" class="btn btn-secondary">📞 Call Now</a>
+                <a href="https://wa.me/918953089301?text=Hello%20R.K.M.%20Higher%20Secondary%20School,%20I%20would%20like%20to%20enquire%20about%20admission." class="btn btn-whatsapp">💬 WhatsApp</a>
             </div>
         </div>
+        <button class="slider-btn prev" aria-label="Previous slide">&#10094;</button>
+        <button class="slider-btn next" aria-label="Next slide">&#10095;</button>
+        <div class="slider-dots"></div>
     </section>
 
     <!-- About Section -->
@@ -72,12 +81,53 @@
                 <div class="director-message">
                     <h3>Director's Message</h3>
                     <div class="director-info">
-                        <div class="director-name">Mr. Harish Srivastava</div>
-                        <div class="director-qualification">M.A., B.Ed.</div>
+                        <div class="director-image">
+                            <img src="https://placehold.co/200x250/1e3a5f/ffffff?text=Director+Photo" alt="Mr. Harish Srivastava - Director">
+                        </div>
+                        <div class="director-details">
+                            <div class="director-name">Mr. Harish Srivastava</div>
+                            <div class="director-qualification">M.A., B.Ed.</div>
+                        </div>
                     </div>
                     <blockquote>
                         "Education is not just about acquiring knowledge, but about building character and values. At R.K.M. Higher Secondary School, we strive to nurture young minds with quality education rooted in Indian culture, preparing them to face the challenges of tomorrow with confidence and integrity."
                     </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Indian Culture Section -->
+    <section class="section indian-culture-section">
+        <div class="container">
+            <h2 class="section-title">Education With Indian Culture</h2>
+            <div class="culture-content">
+                <div class="culture-text">
+                    <p class="culture-intro">
+                        At R.K.M. Higher Secondary School, we believe that true education lies in the harmonious blend of modern knowledge and traditional Indian values. Our institution is committed to nurturing students who are not only academically excellent but also deeply rooted in our rich cultural heritage.
+                    </p>
+                    <div class="culture-values">
+                        <div class="culture-value-card">
+                            <span class="culture-icon">🕉️</span>
+                            <h4>Respect & Values</h4>
+                            <p>Teaching respect for elders, teachers, and traditions while embracing modern learning.</p>
+                        </div>
+                        <div class="culture-value-card">
+                            <span class="culture-icon">📿</span>
+                            <h4>Moral Education</h4>
+                            <p>Inculcating honesty, integrity, and ethical values in every student.</p>
+                        </div>
+                        <div class="culture-value-card">
+                            <span class="culture-icon">🎨</span>
+                            <h4>Cultural Activities</h4>
+                            <p>Celebrating festivals, yoga, meditation, and Indian arts alongside academics.</p>
+                        </div>
+                        <div class="culture-value-card">
+                            <span class="culture-icon">🌟</span>
+                            <h4>Holistic Growth</h4>
+                            <p>Balancing contemporary education with timeless Indian wisdom for complete development.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -248,20 +298,20 @@
                 </div>
                 <form class="enquiry-form" id="enquiryForm">
                     <div class="form-group">
-                        <label for="parentName">Parent/Guardian Name *</label>
-                        <input type="text" id="parentName" name="parentName" required>
-                    </div>
-                    <div class="form-group">
                         <label for="studentName">Student Name *</label>
                         <input type="text" id="studentName" name="studentName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="parentName">Parent/Guardian Name *</label>
+                        <input type="text" id="parentName" name="parentName" required>
                     </div>
                     <div class="form-group">
                         <label for="classApplying">Class Applying For *</label>
                         <select id="classApplying" name="classApplying" required>
                             <option value="">Select Class</option>
-                            <option value="playgroup">Play Group</option>
-                            <option value="nursery">Nursery</option>
-                            <option value="kg">Kindergarten (KG)</option>
+                            <option value="Play Group">Play Group</option>
+                            <option value="Nursery">Nursery</option>
+                            <option value="KG">Kindergarten (KG)</option>
                             <option value="1">Class 1</option>
                             <option value="2">Class 2</option>
                             <option value="3">Class 3</option>
@@ -281,14 +331,13 @@
                         <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10 digit mobile number" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email">
+                        <label for="message">Admission Query *</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Please describe your admission query..." required></textarea>
                     </div>
-                    <div class="form-group">
-                        <label for="message">Additional Message</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Any specific queries or requirements..."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-full">Submit Enquiry</button>
+                    <button type="submit" class="btn btn-whatsapp btn-full">
+                        <span class="btn-icon">📱</span> Send Enquiry on WhatsApp
+                    </button>
+                    <p class="form-note">Your enquiry will be sent directly to our admission team via WhatsApp.</p>
                 </form>
             </div>
         </div>
@@ -321,6 +370,11 @@
                         <p>Monday - Saturday<br>
                         8:00 AM - 2:00 PM</p>
                     </div>
+                    <div class="contact-buttons">
+                        <a href="tel:8953089301" class="btn btn-primary">📞 Call Now</a>
+                        <a href="https://wa.me/918953089301?text=Hello%20R.K.M.%20Higher%20Secondary%20School,%20I%20have%20a%20query." class="btn btn-whatsapp">💬 WhatsApp</a>
+                        <a href="mailto:rkmhighersec@gmail.com" class="btn btn-secondary">✉️ Email</a>
+                    </div>
                 </div>
                 <div class="map-container">
                     <iframe 
@@ -345,26 +399,32 @@
             <div class="footer-section">
                 <h4>R.K.M. Higher Secondary School</h4>
                 <p class="hindi">आर. के. मेमोरियल जूनियर हाईस्कूल</p>
-                <p>"English Medium Education With Indian Culture"</p>
+                <p class="tagline-footer">"English Medium Education With Indian Culture"</p>
+                <p class="director-footer"><strong>Director:</strong> Mr. Harish Srivastava (M.A., B.Ed.)</p>
             </div>
             <div class="footer-section">
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#academics">Academics</a></li>
                     <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#achievements">Results</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Contact</h4>
-                <p>📞 8953089301</p>
-                <p>✉️ rkmhighersec@gmail.com</p>
+                <h4>Contact Info</h4>
+                <p>📍 Hardev Nagar, Bhitargaon Road, Saadh, Kanpur Nagar, Uttar Pradesh</p>
+                <p>📞 <a href="tel:8953089301">8953089301</a></p>
+                <p>✉️ <a href="mailto:rkmhighersec@gmail.com">rkmhighersec@gmail.com</a></p>
+                <a href="https://wa.me/918953089301?text=Hello%20R.K.M.%20Higher%20Secondary%20School,%20I%20would%20like%20to%20enquire%20about%20admission." class="btn btn-whatsapp btn-small">💬 WhatsApp Admission</a>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; 2024 R.K.M. Higher Secondary School. All rights reserved.</p>
+                <p>&copy; 2024 R.K.M. Higher Secondary School (R.K.M.S.D. Education Centre). All rights reserved.</p>
             </div>
         </div>
     </footer>

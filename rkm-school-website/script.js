@@ -69,7 +69,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form submission handler
+// Form submission handler - Send to WhatsApp
 const enquiryForm = document.getElementById('enquiryForm');
 
 if (enquiryForm) {
@@ -87,14 +87,28 @@ if (enquiryForm) {
             return;
         }
         
-        // Show success message (in production, this would send to server)
-        alert('Thank you for your enquiry! We will contact you soon at the provided phone number.');
+        // Create WhatsApp message
+        const whatsappMessage = `Hello R.K.M. Higher Secondary School, I would like to enquire about admission.
+
+Student Name: ${data.studentName}
+Parent/Guardian: ${data.parentName}
+Class: ${data.classApplying}
+Phone: ${data.phone}
+Query: ${data.message}
+
+Please provide me with the admission details.`;
+        
+        // Encode for URL
+        const encodedMessage = encodeURIComponent(whatsappMessage);
+        
+        // Open WhatsApp
+        const whatsappUrl = `https://wa.me/918953089301?text=${encodedMessage}`;
+        window.open(whatsappUrl, '_blank');
         
         // Reset form
         this.reset();
         
-        // Log form data (for demonstration)
-        console.log('Enquiry Form Submitted:', data);
+        console.log('Enquiry sent to WhatsApp:', data);
     });
 }
 
